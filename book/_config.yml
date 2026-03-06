@@ -1,0 +1,17 @@
+title: "Financial Data Analytics for Beginners"
+author: "Amal S"
+
+execute:
+  execute_notebooks: off
+
+latex:
+  latex_documents:
+    targetname: financial_data_analytics_book.tex
+
+repository:
+  url: https://github.com/intheperkofextinction/-Financial-Data-Analysis-For-Beginner-book
+  branch: main
+
+html:
+  use_issues_button: true
+  use_repository_button: true

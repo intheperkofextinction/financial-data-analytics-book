@@ -1,0 +1,14 @@
+format: jb-book
+root: intro
+
+chapters:
+  - file: 01_financial_statements
+  - file: 02_fpa_variance_analysis
+  - file: 03_financial_metrics_kpi_analysis
+  - file: 04_Applying_Financial_Metrics_Using_Python
+  - file: 05_Applying_Financial_Metrics_Using_SQL
+  - file: 06_fpa_analysis_foundations
+  - file: 07_Financial_Reporting_Dashboarding
+  - file: 08_Real_World_Case_Study
+  - file: 09_How_to_Think_Like_a_Financial_Analyst
+  - file: 10_tools_career_path_next_steps
