@@ -1,0 +1,1026 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Chapter 1: Understanding Financial Statements for Data Analytics &#8212; Financial Data Analytics for Beginners</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_financial_statements';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 2: FP&amp;A Fundamentals and Variance Analysis" href="02_fpa_variance_analysis.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Financial Data Analytics for Beginners</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 1: Understanding Financial Statements for Data Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_fpa_variance_analysis.html">Chapter 2: FP&amp;A Fundamentals and Variance Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_financial_metrics_kpi_analysis.html">Chapter 3: Financial Metrics and KPI Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Applying_Financial_Metrics_Using_Python.html">Chapter 4: Applying Financial Metrics Using Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_Applying_Financial_Metrics_Using_SQL.html">Chapter 5: Applying Financial Metrics Using SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_fpa_analysis_foundations.html">Chapter 6: FP&amp;A Analysis Foundations</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="07_Financial_Reporting_Dashboarding.html">Chapter 7: Financial Reporting &amp; Dashboarding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_Real_World_Case_Study.html">Chapter 8: Real-World Case Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_How_to_Think_Like_a_Financial_Analyst.html">Chapter 9 — How to Think Like a Financial Analyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_tools_career_path_next_steps.html">Chapter 10 — Tools, Career Path &amp; Next Steps</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/intheperkofextinction/-Financial-Data-Analysis-For-Beginner-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/intheperkofextinction/-Financial-Data-Analysis-For-Beginner-book/issues/new?title=Issue%20on%20page%20%2F01_financial_statements.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/01_financial_statements.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 1: Understanding Financial Statements for Data Analytics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#business-context">1. Business Context</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fp-a-financial-planning-analysis">FP&amp;A (Financial Planning &amp; Analysis)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-statements-overview">2. Financial Statements Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#income-statement">2.1 Income Statement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-sheet">2.2 Balance Sheet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cash-flow-statement">2.3 Cash Flow Statement</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-financial-statements-to-data">3. From Financial Statements to Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-statements-as-tabular-data">3.1 Financial Statements as Tabular Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structuring-financial-data-for-analysis">3.2 Structuring Financial Data for Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-step-matters">3.3 Why This Step Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-financial-metrics">4. Introduction to Financial Metrics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-financial-metrics-matter">4.1 Why Financial Metrics Matter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-categories-of-financial-metrics">4.2 Common Categories of Financial Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-profitability-metrics">4.3 Example: Profitability Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ebitda-in-financial-analysis">4.4 EBITDA in Financial Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaway">4.5 Key Takeaway</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-summary-transition">Chapter Summary &amp; Transition</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-understanding-financial-statements-for-data-analytics">
+<h1>Chapter 1: Understanding Financial Statements for Data Analytics<a class="headerlink" href="#chapter-1-understanding-financial-statements-for-data-analytics" title="Permalink to this heading">#</a></h1>
+<section id="business-context">
+<h2>1. Business Context<a class="headerlink" href="#business-context" title="Permalink to this heading">#</a></h2>
+<p>Every organization, regardless of industry, relies on financial data
+to make decisions related to growth, cost control, and performance evaluation.
+As a result, financial analysis plays a critical role across all institutions.</p>
+<p>A <strong>Financial Data Analyst</strong> works with structured financial data to:</p>
+<ul class="simple">
+<li><p>Analyze business performance</p></li>
+<li><p>Identify trends and inefficiencies</p></li>
+<li><p>Support planning and decision-making using data-driven insights</p></li>
+</ul>
+<p>To perform this role effectively, it is essential to understand
+industry-standard financial statements and analytical processes.</p>
+<p>In practice, financial analysts primarily work with:</p>
+<ul class="simple">
+<li><p><strong>Income Statements</strong></p></li>
+<li><p><strong>Balance Sheets</strong></p></li>
+<li><p><strong>Cash Flow Statements</strong></p></li>
+</ul>
+<section id="fp-a-financial-planning-analysis">
+<h3>FP&amp;A (Financial Planning &amp; Analysis)<a class="headerlink" href="#fp-a-financial-planning-analysis" title="Permalink to this heading">#</a></h3>
+<p>Within FP&amp;A teams, these financial statements are used for:</p>
+<ul class="simple">
+<li><p>Budgeting and forecasting</p></li>
+<li><p>Variance analysis (Budget vs Actual)</p></li>
+<li><p>Performance reporting to management and stakeholders</p></li>
+</ul>
+</section>
+</section>
+<section id="financial-statements-overview">
+<h2>2. Financial Statements Overview<a class="headerlink" href="#financial-statements-overview" title="Permalink to this heading">#</a></h2>
+<p>Financial analysis is built on three core financial statements.
+Each statement provides a different perspective on a company’s
+financial performance and position.</p>
+<section id="income-statement">
+<h3>2.1 Income Statement<a class="headerlink" href="#income-statement" title="Permalink to this heading">#</a></h3>
+<p>The income statement measures a company’s financial performance
+over a specific period of time.</p>
+<p>It answers questions such as:</p>
+<ul class="simple">
+<li><p>How much revenue did the company generate?</p></li>
+<li><p>What were the major costs?</p></li>
+<li><p>Is the business profitable?</p></li>
+</ul>
+<p>Common components include:</p>
+<ul class="simple">
+<li><p>Revenue</p></li>
+<li><p>Cost of Goods Sold (COGS)</p></li>
+<li><p>Operating Expenses</p></li>
+<li><p>Net Profit</p></li>
+</ul>
+<p>For financial data analysts, the income statement is the primary
+source for profitability and margin analysis.</p>
+</section>
+<hr class="docutils" />
+<section id="balance-sheet">
+<h3>2.2 Balance Sheet<a class="headerlink" href="#balance-sheet" title="Permalink to this heading">#</a></h3>
+<p>The balance sheet represents a company’s financial position
+at a specific point in time.</p>
+<p>It is structured around the fundamental accounting equation:</p>
+<p><strong>Assets = Liabilities + Equity</strong></p>
+<p>The balance sheet helps analysts understand:</p>
+<ul class="simple">
+<li><p>What the company owns</p></li>
+<li><p>What the company owes</p></li>
+<li><p>How the business is financed</p></li>
+</ul>
+<p>In FP&amp;A, balance sheet data is often used to assess liquidity,
+leverage, and financial stability.</p>
+</section>
+<hr class="docutils" />
+<section id="cash-flow-statement">
+<h3>2.3 Cash Flow Statement<a class="headerlink" href="#cash-flow-statement" title="Permalink to this heading">#</a></h3>
+<p>The cash flow statement tracks the movement of actual cash
+into and out of the business.</p>
+<p>It is divided into:</p>
+<ul class="simple">
+<li><p>Operating Activities</p></li>
+<li><p>Investing Activities</p></li>
+<li><p>Financing Activities</p></li>
+</ul>
+<p>Unlike the income statement, cash flow analysis focuses on
+liquidity rather than profitability.</p>
+<p>For analysts, this statement is critical for understanding
+whether profits are supported by real cash generation.</p>
+</section>
+</section>
+<section id="from-financial-statements-to-data">
+<h2>3. From Financial Statements to Data<a class="headerlink" href="#from-financial-statements-to-data" title="Permalink to this heading">#</a></h2>
+<p>Financial statements are not only accounting documents —
+they are structured datasets that can be analyzed using
+data analytics tools.</p>
+<p>In practice, financial data analysts rarely work with
+PDF reports. Instead, financial statements are stored as:</p>
+<ul class="simple">
+<li><p>Tables in databases</p></li>
+<li><p>CSV or Excel files</p></li>
+<li><p>Data warehouse views</p></li>
+</ul>
+<p>The analyst’s task is to convert these structured records
+into meaningful metrics, trends, and insights.</p>
+<section id="financial-statements-as-tabular-data">
+<h3>3.1 Financial Statements as Tabular Data<a class="headerlink" href="#financial-statements-as-tabular-data" title="Permalink to this heading">#</a></h3>
+<p>Each financial statement can be represented in tabular form,
+where rows represent time periods and columns represent
+financial line items.</p>
+<p>For example, an income statement dataset typically includes:</p>
+<ul class="simple">
+<li><p>Revenue</p></li>
+<li><p>Cost of Goods Sold (COGS)</p></li>
+<li><p>Operating Expenses</p></li>
+<li><p>Profit metrics</p></li>
+</ul>
+<p>This structure allows analysts to perform calculations,
+aggregations, and comparisons programmatically.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">income_statement</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;month&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Jan&quot;</span><span class="p">,</span> <span class="s2">&quot;Feb&quot;</span><span class="p">,</span> <span class="s2">&quot;Mar&quot;</span><span class="p">,</span> <span class="s2">&quot;Apr&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;revenue&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">120000</span><span class="p">,</span> <span class="mi">135000</span><span class="p">,</span> <span class="mi">128000</span><span class="p">,</span> <span class="mi">140000</span><span class="p">],</span>
+    <span class="s2">&quot;cogs&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">70000</span><span class="p">,</span> <span class="mi">78000</span><span class="p">,</span> <span class="mi">75000</span><span class="p">,</span> <span class="mi">80000</span><span class="p">],</span>
+    <span class="s2">&quot;operating_expenses&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25000</span><span class="p">,</span> <span class="mi">26000</span><span class="p">,</span> <span class="mi">25500</span><span class="p">,</span> <span class="mi">27000</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">income_statement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>month</th>
+      <th>revenue</th>
+      <th>cogs</th>
+      <th>operating_expenses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Jan</td>
+      <td>120000</td>
+      <td>70000</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Feb</td>
+      <td>135000</td>
+      <td>78000</td>
+      <td>26000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mar</td>
+      <td>128000</td>
+      <td>75000</td>
+      <td>25500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Apr</td>
+      <td>140000</td>
+      <td>80000</td>
+      <td>27000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="structuring-financial-data-for-analysis">
+<h3>3.2 Structuring Financial Data for Analysis<a class="headerlink" href="#structuring-financial-data-for-analysis" title="Permalink to this heading">#</a></h3>
+<p>Once financial data is available in tabular form,
+analysts can compute standardized metrics that are
+used across FP&amp;A and finance teams.</p>
+<p>At this stage, the focus is not advanced modeling,
+but building a reliable analytical foundation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;gross_profit&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;revenue&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;cogs&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;ebitda&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;gross_profit&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;operating_expenses&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">income_statement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>month</th>
+      <th>revenue</th>
+      <th>cogs</th>
+      <th>operating_expenses</th>
+      <th>gross_profit</th>
+      <th>ebitda</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Jan</td>
+      <td>120000</td>
+      <td>70000</td>
+      <td>25000</td>
+      <td>50000</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Feb</td>
+      <td>135000</td>
+      <td>78000</td>
+      <td>26000</td>
+      <td>57000</td>
+      <td>31000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mar</td>
+      <td>128000</td>
+      <td>75000</td>
+      <td>25500</td>
+      <td>53000</td>
+      <td>27500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Apr</td>
+      <td>140000</td>
+      <td>80000</td>
+      <td>27000</td>
+      <td>60000</td>
+      <td>33000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="why-this-step-matters">
+<h3>3.3 Why This Step Matters<a class="headerlink" href="#why-this-step-matters" title="Permalink to this heading">#</a></h3>
+<p>Converting financial statements into structured datasets
+allows analysts to:</p>
+<ul class="simple">
+<li><p>Standardize financial metrics</p></li>
+<li><p>Automate repetitive calculations</p></li>
+<li><p>Compare performance across periods</p></li>
+<li><p>Support budgeting and forecasting workflows</p></li>
+</ul>
+<p>This transformation forms the foundation for more advanced
+FP&amp;A analysis, including variance analysis and forecasting,
+which will be covered in later chapters.</p>
+</section>
+</section>
+<section id="introduction-to-financial-metrics">
+<h2>4. Introduction to Financial Metrics<a class="headerlink" href="#introduction-to-financial-metrics" title="Permalink to this heading">#</a></h2>
+<p>Financial metrics are quantitative measures derived from
+financial statements to evaluate business performance.</p>
+<p>While raw financial statements show numbers,
+metrics provide <strong>meaning, comparability, and insight</strong>.</p>
+<p>In FP&amp;A and financial analytics, metrics are used to:</p>
+<ul class="simple">
+<li><p>Track performance over time</p></li>
+<li><p>Compare results against budgets or targets</p></li>
+<li><p>Support management decision-making</p></li>
+</ul>
+<section id="why-financial-metrics-matter">
+<h3>4.1 Why Financial Metrics Matter<a class="headerlink" href="#why-financial-metrics-matter" title="Permalink to this heading">#</a></h3>
+<p>Individual financial line items, such as revenue or expenses,
+do not provide sufficient context on their own.</p>
+<p>Financial metrics help analysts:</p>
+<ul class="simple">
+<li><p>Normalize performance across time periods</p></li>
+<li><p>Identify trends and inefficiencies</p></li>
+<li><p>Translate financial data into actionable insights</p></li>
+</ul>
+<p>For this reason, metrics form the core language
+of financial analysis.</p>
+</section>
+<section id="common-categories-of-financial-metrics">
+<h3>4.2 Common Categories of Financial Metrics<a class="headerlink" href="#common-categories-of-financial-metrics" title="Permalink to this heading">#</a></h3>
+<p>Financial metrics are typically grouped into categories
+based on what aspect of the business they measure.</p>
+<p>The most common categories include:</p>
+<ul class="simple">
+<li><p><strong>Profitability Metrics</strong></p></li>
+<li><p><strong>Liquidity Metrics</strong></p></li>
+<li><p><strong>Efficiency Metrics</strong></p></li>
+<li><p><strong>Return Metrics</strong></p></li>
+</ul>
+<p>This book focuses primarily on metrics
+commonly used in FP&amp;A and performance analysis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;gross_margin&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;gross_profit&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">income_statement</span><span class="p">[</span><span class="s2">&quot;revenue&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">income_statement</span><span class="p">[[</span><span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="s2">&quot;revenue&quot;</span><span class="p">,</span> <span class="s2">&quot;gross_profit&quot;</span><span class="p">,</span> <span class="s2">&quot;gross_margin&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>month</th>
+      <th>revenue</th>
+      <th>gross_profit</th>
+      <th>gross_margin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Jan</td>
+      <td>120000</td>
+      <td>50000</td>
+      <td>0.416667</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Feb</td>
+      <td>135000</td>
+      <td>57000</td>
+      <td>0.422222</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mar</td>
+      <td>128000</td>
+      <td>53000</td>
+      <td>0.414062</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Apr</td>
+      <td>140000</td>
+      <td>60000</td>
+      <td>0.428571</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="example-profitability-metrics">
+<h3>4.3 Example: Profitability Metrics<a class="headerlink" href="#example-profitability-metrics" title="Permalink to this heading">#</a></h3>
+<p>Profitability metrics evaluate how effectively
+a company generates profit from its operations.</p>
+<p>One commonly used metric is <strong>Gross Margin</strong>,
+which measures the percentage of revenue
+remaining after covering direct production costs.</p>
+<p>Gross Margin provides insight into:</p>
+<ul class="simple">
+<li><p>Pricing strategy</p></li>
+<li><p>Cost efficiency</p></li>
+<li><p>Operational performance</p></li>
+</ul>
+</section>
+<section id="ebitda-in-financial-analysis">
+<h3>4.4 EBITDA in Financial Analysis<a class="headerlink" href="#ebitda-in-financial-analysis" title="Permalink to this heading">#</a></h3>
+<p>EBITDA (Earnings Before Interest, Taxes,
+Depreciation, and Amortization) is widely used
+in FP&amp;A to assess core operating performance.</p>
+<p>By excluding financing and accounting effects,
+EBITDA allows analysts to:</p>
+<ul class="simple">
+<li><p>Compare performance across periods</p></li>
+<li><p>Evaluate operational efficiency</p></li>
+<li><p>Support forecasting and planning activities</p></li>
+</ul>
+</section>
+<section id="key-takeaway">
+<h3>4.5 Key Takeaway<a class="headerlink" href="#key-takeaway" title="Permalink to this heading">#</a></h3>
+<p>Financial metrics transform raw financial data
+into standardized measures that support
+analysis, comparison, and decision-making.</p>
+<p>In the next section, these foundational concepts
+will be applied within an FP&amp;A workflow.</p>
+</section>
+</section>
+<section id="chapter-summary-transition">
+<h2>Chapter Summary &amp; Transition<a class="headerlink" href="#chapter-summary-transition" title="Permalink to this heading">#</a></h2>
+<p>This chapter introduced the foundational concepts required
+for financial data analysis.</p>
+<p>Key topics covered include:</p>
+<ul class="simple">
+<li><p>The role of financial data analysis within organizations</p></li>
+<li><p>An overview of the three core financial statements</p></li>
+<li><p>How financial statements are transformed into structured datasets</p></li>
+<li><p>The purpose and use of fundamental financial metrics</p></li>
+</ul>
+<p>Through simple examples, this chapter demonstrated how
+raw financial data can be converted into meaningful metrics
+using Python.</p>
+<p>These concepts form the analytical foundation required
+for Financial Planning and Analysis (FP&amp;A).</p>
+<p>While financial metrics help measure performance,
+FP&amp;A focuses on <strong>planning, forecasting, and variance analysis</strong>
+to support business decision-making.</p>
+<p>In the next chapter, these foundational concepts
+will be applied to core FP&amp;A workflows, including:</p>
+<ul class="simple">
+<li><p>Budget vs Actual analysis</p></li>
+<li><p>Variance calculation and interpretation</p></li>
+<li><p>Performance reporting using financial data</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_fpa_variance_analysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 2: FP&amp;A Fundamentals and Variance Analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#business-context">1. Business Context</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fp-a-financial-planning-analysis">FP&amp;A (Financial Planning &amp; Analysis)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-statements-overview">2. Financial Statements Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#income-statement">2.1 Income Statement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-sheet">2.2 Balance Sheet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cash-flow-statement">2.3 Cash Flow Statement</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-financial-statements-to-data">3. From Financial Statements to Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-statements-as-tabular-data">3.1 Financial Statements as Tabular Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structuring-financial-data-for-analysis">3.2 Structuring Financial Data for Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-step-matters">3.3 Why This Step Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-financial-metrics">4. Introduction to Financial Metrics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-financial-metrics-matter">4.1 Why Financial Metrics Matter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-categories-of-financial-metrics">4.2 Common Categories of Financial Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-profitability-metrics">4.3 Example: Profitability Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ebitda-in-financial-analysis">4.4 EBITDA in Financial Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaway">4.5 Key Takeaway</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-summary-transition">Chapter Summary &amp; Transition</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Amal S
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
